@@ -1,0 +1,54 @@
+.rate {
+    padding: 60px 0 120px;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+    &__fee {
+        margin-top: 60px;
+        display: flex;
+        gap: 40px;
+        &_col {
+            width: 360px;
+            height: 460px;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(20, 16, 36, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            color: #141024;
+            transition: 2s;
+            &-name {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;  
+                padding-bottom: 65px;          
+            }
+            &-sale {
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 80px;
+                padding-bottom: 20px;
+            }
+            &-description {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                padding-bottom: 80px;
+                height: 60px;
+            }            
+        }
+        &_col:hover {
+            background: #141024;
+            color: white;
+            // height: 500px;
+            transform: scaleY(1.06);
+            &-name {
+                transform: scaleY(0.94);
+            }
+        }
+    }
+}

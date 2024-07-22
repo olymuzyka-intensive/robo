@@ -1,0 +1,88 @@
+.btn {
+  background: #d52027;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-size: 18px;
+  line-height: 29px;
+  cursor: pointer;
+  &--sign {
+    padding: 25px 84px;
+    color: white;
+    font-weight: 700;
+    &:hover {
+      border-color: #d52027;
+      background: white;
+      color: #d52027;
+    }
+  }
+
+  &--submit {
+    padding: 25px 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border: 2px solid transparent;
+    &:active {
+      border: 2px solid white;
+      transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  }
+
+  &--post {
+    padding: 29px 0;
+    // width: 100%;
+    background: #141024;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    &:hover {
+      color: #d52027;
+      background: white;
+    }
+  }
+}
+
+// всплывающая подсказка
+.tip {
+    background: url(/src/img/tip.svg) no-repeat;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    position: relative;
+    top: -15px;   
+    cursor: pointer; 
+  }
+  
+ .tip-hover {
+    padding: 15px 20px;
+    background: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #141024;
+    box-shadow: 0px 2px 8px rgba(20, 16, 36, 0.1);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    width: 300px;
+  }
+
+  .tip:hover + .tip-hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .up {
+    position: fixed;
+    width: 50px;
+    left: 95%;
+    bottom: 5%;   
+    z-index: 100; 
+  }

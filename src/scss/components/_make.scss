@@ -1,0 +1,41 @@
+.make {
+    padding: 106px 0 87px;
+    background:  url(/src/img/footer-bg.svg) #D52027;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &__row {
+        display: flex;
+        gap: 65px;
+        justify-content: space-between;
+        &_title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 47px;
+            color: #FFFFFF;
+            max-width: 400px;
+            padding-bottom: 20px;
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+        &_left {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(40, 41, 68, 0.7);
+            outline: none;
+        }
+    }
+    
+}

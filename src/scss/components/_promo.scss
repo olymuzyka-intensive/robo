@@ -1,0 +1,36 @@
+.promo {
+    background: #141024;
+    color: white;
+    padding-top: 80px;
+    &__row {
+        display: flex;
+        gap: 30px;
+        &_left {
+            padding: 245px 0 240px; //320
+            width: 530px;
+        }
+        &_right {
+            position: relative;
+            &-1 {
+                position: absolute;
+                top: 40px;
+            }
+            &-2 {
+                position: absolute;
+                left: 133px;
+                top: -50px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 112px;
+        padding-bottom: 50px;
+    }
+    &__text {
+        padding-bottom: 75px;
+        font-size: 20px;
+        line-height: 32px; 
+    }
+}

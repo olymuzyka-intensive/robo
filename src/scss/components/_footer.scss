@@ -1,0 +1,28 @@
+.footer .container {
+    width: 95%;
+    padding: 30px 100px;
+}
+.footer {
+    background: #141024;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &_footer {
+            padding-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    &__logo a, &__phone a {
+        font-size: 30px;
+        line-height: 48px; 
+        font-weight: 700;
+        color: white;
+    }
+    
+    &__phone {
+        font-weight: 600;
+    }
+}
