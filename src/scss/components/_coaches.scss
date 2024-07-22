@@ -1,12 +1,11 @@
 .coaches__info_overlay {
   position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    z-index: 998;
-
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 998;
 }
 
 .coaches__info_overlay.open {
@@ -63,9 +62,9 @@
     }
 
     &_socials svg {
-        &:hover path{
-            fill: #d52027;
-        }
+      &:hover path {
+        fill: #d52027;
+      }
     }
   }
 
@@ -83,9 +82,9 @@
     border: 1px solid gray;
     &_top {
       display: flex;
-      gap: 40px;  
-      height: 225px;  
-      margin-bottom: 40px;  
+      gap: 40px;
+      height: 225px;
+      margin-bottom: 40px;
     }
 
     &_top img {
@@ -115,16 +114,16 @@
         line-height: 32px;
         color: rgba(20, 16, 36, 0.2);
         &:hover {
-          color: #D52027;
+          color: #d52027;
         }
         &--active {
-          color: #D52027;
-        }        
-      }  
+          color: #d52027;
+        }
+      }
       &-content {
         overflow-y: scroll;
         max-height: 340px;
-      }    
+      }
     }
 
     &_chapter-active {
@@ -145,8 +144,8 @@
 }
 
 .coaches__slider {
-    position: relative;
-    margin-top: 60px;
+  position: relative;
+  margin-top: 60px;
 }
 
 .slick-track {
@@ -166,45 +165,42 @@
   height: 5px;
   content: "";
   opacity: 0.25;
-  background: rgba(20, 16, 36, 0.8);  
+  background: rgba(20, 16, 36, 0.8);
 }
 
 .slick-dots li button:before .slick-active {
-    background: rgba(20, 16, 36, 1);
-    border-radius: 40px;
+  background: rgba(20, 16, 36, 1);
+  border-radius: 40px;
 }
 
 .coaches__slider .slick-arrow {
   position: absolute;
-  top: 105%; 
-  // margin: -15px 0 0 0; 
-  z-index: 1000; 
-  font-size: 0; 
-  width: 40px; 
+  top: 105%;
+  // margin: -15px 0 0 0;
+  z-index: 1000;
+  font-size: 0;
+  width: 40px;
   height: 40px;
   // cursor: pointer;
   color: transparent;
 }
 
 .slick-arrow.slick-prev::before {
-  content: '';
+  content: "";
 }
 
 .slick-arrow.slick-next::before {
-  content: '';
+  content: "";
 }
 
 .slick-prev {
   left: 92%;
 }
 .slick-arrow.slick-prev {
-    background: url('../assets/img/arrow-left.svg') 0 0 / 100% no-repeat;
+  background: url('/public/img/arrow-left.svg') 0 0 / 100% no-repeat;
 }
 
 .slick-arrow.slick-next {
-    background: url('../assets/img/arrow-right.png') 0 0 / 100% no-repeat;
-    right: 10px;
-} 
-
-
-
+  background: url('/public/img/arrow-right.png') 0 0 / 100% no-repeat;
+  right: 10px;
+}

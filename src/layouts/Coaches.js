@@ -2,7 +2,7 @@ const Coaches = [
   {
     id: "1",
     name: "Ирина Лайм",
-    image: "./src/assets/img/coache1.jpg",
+    image: "img/coache1.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -12,15 +12,17 @@ const Coaches = [
     timeCourse: "Ноябрь 2020 — Февраль 2021",
     programCourse: "Программа дополнительного образования «3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experience:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    awards:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
     id: "2",
     name: "Марина Орлова",
-    image: "./src/assets/img/coache2.jpg",
+    image: "img/coache2.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -30,15 +32,17 @@ const Coaches = [
     timeCourse: "Ноябрь 2020 — Февраль 2021",
     programCourse: "Программа дополнительного образования «3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experience:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    awards:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
     id: "3",
     name: "Максим Петров",
-    image: "./src/assets/img/coache3.jpg",
+    image: "img/coache3.jpg",
     info: "преподаватель по программированию",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -48,15 +52,17 @@ const Coaches = [
     timeCourse: "Ноябрь 2020 — Февраль 2021",
     programCourse: "Программа дополнительного образования «3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experience:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    awards:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
     id: "4",
     name: "Константин Назаров",
-    image: "./src/assets/img/coache4.jpg",
+    image: "img/coache4.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -66,15 +72,17 @@ const Coaches = [
     timeCourse: "Ноябрь 2020 — Февраль 2021",
     programCourse: "Программа дополнительного образования «3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experience:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    awards:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
     id: "5",
     name: "Лиза Весенняя",
-    image: "./src/assets/img/coache5.jpg",
+    image: "img/coache5.jpg",
     info: "преподаватель по программированию",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -84,8 +92,10 @@ const Coaches = [
     timeCourse: "Ноябрь 2020 — Февраль 2021",
     programCourse: "Программа дополнительного образования «3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experience:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    awards:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },

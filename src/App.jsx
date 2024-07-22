@@ -36,7 +36,7 @@ const App = () => {
                                 <circle cx="391.5" cy="392.132" r="351.5" stroke="white" strokeWidth="80"/>
                                 </svg>
                                 
-                            <img className="promo__row_right promo__row_right-2" src="./src/assets/img/promo-img.png" alt="promo-img"/>
+                            <img className="promo__row_right promo__row_right-2" src="img/promo-img.png" alt="promo-img"/>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const App = () => {
     
             <section className='up'>
                 <a href="#header">
-                    <img src="./src/assets/img/arrow-up.svg" alt="up" />
+                    <img src="img/arrow-up.svg" alt="up" />
                 </a>
             </section>
             
