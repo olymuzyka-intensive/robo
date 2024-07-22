@@ -2,7 +2,7 @@ const Coaches = [
   {
     id: "1",
     name: "Ирина Лайм",
-    image: "/src/img/coache1.jpg",
+    image: "./src/assets/img/coache1.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -20,7 +20,7 @@ const Coaches = [
   {
     id: "2",
     name: "Марина Орлова",
-    image: "/src/img/coache2.jpg",
+    image: "./src/assets/img/coache2.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -38,7 +38,7 @@ const Coaches = [
   {
     id: "3",
     name: "Максим Петров",
-    image: "/src/img/coache3.jpg",
+    image: "./src/assets/img/coache3.jpg",
     info: "преподаватель по программированию",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -56,7 +56,7 @@ const Coaches = [
   {
     id: "4",
     name: "Константин Назаров",
-    image: "/src/img/coache4.jpg",
+    image: "./src/assets/img/coache4.jpg",
     info: "преподаватель по робототехнике",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
@@ -74,7 +74,7 @@ const Coaches = [
   {
     id: "5",
     name: "Лиза Весенняя",
-    image: "/src/img/coache5.jpg",
+    image: "./src/assets/img/coache5.jpg",
     info: "преподаватель по программированию",
     timeEdu: "Сентябрь 1995 — Июнь 2000",
     placeEdu: "Санкт-Петербургский политехнический университет Петра Великого",
