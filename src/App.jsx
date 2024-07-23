@@ -7,7 +7,7 @@ const App = () => {
         <header className="header" id='header'>
             <div className="container">
                 <div className="header__row">
-                    <div className="header__logo"> <a href="/"> ROBO.SCHOOL</a></div>
+                    <div className="header__logo"> <a href="#"> ROBO.SCHOOL</a></div>
                     <nav>
                         <ul className="header__nav">
                             <li className="header__nav_item"> <a href="#about">О школе</a></li>
@@ -159,7 +159,7 @@ const App = () => {
         <footer className="footer">
             <div className="container">
                 <div className="footer__row"> 
-                    <div className="footer__logo"> <a href="/"> ROBO.SCHOOL</a></div>
+                    <div className="footer__logo"> <a href="#"> ROBO.SCHOOL</a></div>
                     <div className="footer__phone"><a href="tel:+7 800 000 11 22">+7 800 000 11 22</a></div>                   
                 </div>
                 <div className="footer__row_footer">
