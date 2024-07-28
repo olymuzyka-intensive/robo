@@ -1,6 +1,6 @@
 const Coaches = [
   {
-    id: "1",
+    id: 1,
     name: "Ирина Лайм",
     image: "img/coache1.jpg",
     info: "преподаватель по робототехнике",
@@ -10,17 +10,20 @@ const Coaches = [
     specEdu: "Математика и компьютерные науки",
     formEdu: "Очная",
     timeCourse: "Ноябрь 2020 — Февраль 2021",
-    programCourse: "Программа дополнительного образования «3D Моделирование»",
+    programCourse: "«3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experiencePeriod: "Январь 2020 - Ноябрь 2022",
+    experiencePost: '"Менеджер в компании "ABC"',
+    experienceCharge:
+      "Управление командой из 10 человек, разработка и реализация стратегий продаж, увеличение объемов продаж на 25% за год",
+    awardsTitle: "Лучший сотрудник месяца",
     awards:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+      "Получена в марте 2022 года за выдающиеся достижения в области продаж и превосходное выполнение KPI",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
-    id: "2",
+    id: 2,
     name: "Марина Орлова",
     image: "img/coache2.jpg",
     info: "преподаватель по робототехнике",
@@ -30,17 +33,20 @@ const Coaches = [
     specEdu: "Математика и компьютерные науки",
     formEdu: "Очная",
     timeCourse: "Ноябрь 2020 — Февраль 2021",
-    programCourse: "Программа дополнительного образования «3D Моделирование»",
+    programCourse: "«3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experiencePeriod: "Март 2018 - Декабрь 2019",
+    experiencePost: 'Специалист в агентстве "XYZ"',
+    experienceCharge:
+      "Создание и ведение рекламных кампаний в социальных сетях, анализ эффективности маркетинговых стратегий, увеличение вовлеченности аудитории на 40%.",
+    awardsTitle: 'Премия "Идея года"',
     awards:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+      "Присуждена в 2021 году за успешную реализацию инновационной маркетинговой кампании, которая принесла компании значительные прибыли",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
-    id: "3",
+    id: 3,
     name: "Максим Петров",
     image: "img/coache3.jpg",
     info: "преподаватель по программированию",
@@ -50,17 +56,20 @@ const Coaches = [
     specEdu: "Математика и компьютерные науки",
     formEdu: "Очная",
     timeCourse: "Ноябрь 2020 — Февраль 2021",
-    programCourse: "Программа дополнительного образования «3D Моделирование»",
+    programCourse: "«3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experiencePeriod: "Январь 2021 - Настоящее время",
+    experiencePost: 'Координатор проектов в некоммерческой организации "HelpUs"',
+    experienceCharge:
+      "Организация и управление проектами по помощи нуждающимся, взаимодействие с волонтерами и партнерами, мониторинг и оценка результатов проектов",
+    awardsTitle: 'Диплом "Лучший волонтер года"',
     awards:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+      "Получен в 2023 году за активное участие в благотворительных проектах и организациях",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
-    id: "4",
+    id: 4,
     name: "Константин Назаров",
     image: "img/coache4.jpg",
     info: "преподаватель по робототехнике",
@@ -70,17 +79,20 @@ const Coaches = [
     specEdu: "Математика и компьютерные науки",
     formEdu: "Очная",
     timeCourse: "Ноябрь 2020 — Февраль 2021",
-    programCourse: "Программа дополнительного образования «3D Моделирование»",
+    programCourse: "«3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experiencePeriod: "Январь 2020 - Ноябрь 2022",
+    experiencePost: '"Менеджер в компании "ABC"',
+    experienceCharge:
+      "Управление командой из 10 человек, разработка и реализация стратегий продаж, увеличение объемов продаж на 25% за год",
+    awardsTitle: 'Награда "Золотой проект"',
     awards:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+      "Присуждена в 2019 году за успешное завершение проекта по разработке нового программного обеспечения, который значительно улучшил внутренние процессы компании",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },
   {
-    id: "5",
+    id: 5,
     name: "Лиза Весенняя",
     image: "img/coache5.jpg",
     info: "преподаватель по программированию",
@@ -90,12 +102,15 @@ const Coaches = [
     specEdu: "Математика и компьютерные науки",
     formEdu: "Очная",
     timeCourse: "Ноябрь 2020 — Февраль 2021",
-    programCourse: "Программа дополнительного образования «3D Моделирование»",
+    programCourse: "«3D Моделирование»",
     placeCourse: "Институт дополнительного образования «Политех»",
-    experience:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
-    awards:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero culpa, quia fugit consequatur accusamus. Delectus minima iure ipsum voluptates sit facere alias repudiandae, eveniet odit dolorem illo dolores!",
+    experiencePeriod: "Январь 2020 - Ноябрь 2022",
+    experiencePost: '"Менеджер в компании "ABC"',
+    experienceCharge:
+      "Управление командой из 10 человек, разработка и реализация стратегий продаж, увеличение объемов продаж на 25% за год",
+      awardsTitle: 'Награда "Золотой проект"',
+      awards:
+        "Присуждена в 2019 году за успешное завершение проекта по разработке нового программного обеспечения, который значительно улучшил внутренние процессы компании",
     facebook: "https://www.facebook.com/?locale=ru_RU",
     inst: "https://www.instagram.com/",
   },

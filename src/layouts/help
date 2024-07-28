@@ -1,0 +1,101 @@
+  function openModal() {
+    const overlay = document.querySelector(".coaches__info_overlay");
+    overlay.classList.add("open");
+  }
+
+  // function openSlideDetails() {
+  //   const modal = document.querySelector(".coaches__info");
+  //   const modalContent = document.querySelectorAll('.coaches__info-content')
+  //   const moreBtns = document.querySelectorAll('.coaches__more')
+
+  //   moreBtns.forEach((btn) => {
+  //     btn.addEventListener("click", (e) => {
+  //       const infoId = `#${btn.getAttribute('data-info')}`
+  //       // let infoId = e.currentTarget.getAttribute('data-info')
+  //       modalContent.forEach(event => {
+  //         event.classList.remove('open')
+  //       });
+  //       // const openContent = document.querySelector(infoId)
+  //       document.querySelector(`.coaches__info-content[data-info="${infoId}"]`).classList.add('open')
+  //       // modal.classList.add('open')
+
+  //     });
+  //   }); 
+  //   modal.classList.add("open");
+  //   openModal();
+
+  // }
+
+  function openSlideDetails() {
+    const modal = document.querySelector(".coaches__info");
+    const moreBtns = document.querySelectorAll('.coaches__more')
+
+    moreBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault()
+        let infoId = e.currentTarget.getAttribute('data-info')
+        let modalContent = document.querySelector('.coaches__info-content [data-info="' + infoId + '"]')
+        modalContent.classList.add("open");
+      });
+    });
+    modal.classList.add("open");
+    openModal();
+  }
+
+  function closeModal() {
+    const overlay = document.querySelector(".coaches__info_overlay.open");
+    overlay.classList.remove("open");
+  }
+
+  function closeSlideDetails() {
+    const modal = document.querySelector(".coaches__info.open");
+    modal.classList.remove("open");
+    closeModal();
+  }
+
+  function toggleChapter() {
+    const chapters = document.querySelectorAll(".coaches__info_chapter-nav");
+    chapters.forEach((chapter) => {
+      chapter.addEventListener("click", () => {
+        const activeChapter = document.querySelector('.coaches__info_chapter-nav.active')
+        const activeContent = document.querySelector('.coaches__info_chapter-item.active')
+
+        if (activeChapter) {
+          activeChapter.classList.remove('active')
+        }
+        if (activeContent) {
+          activeContent.classList.remove('active')
+        }
+        const nextActiveChapterId = `#${chapter.getAttribute('data-action')}`
+        const nextActiveContent = document.querySelector(nextActiveChapterId)
+
+        chapter.classList.add('active')
+        nextActiveContent.classList.add('active')
+
+      });
+    });
+  }
+
+
+
+  <div>
+      {/* Слайдер с кнопками подробнее */}
+      {data.map(item => (
+        <div key={item.id}>
+          <button onClick={() => handleButtonClick(item.id)} className="btn-more" data-info-id={item.id}>
+            Подробнее
+          </button>
+        </div>
+      ))}
+      
+      {/* Popup окна */}
+      {data.map(item => (
+        <div key={item.id} className={`popup ${activePopup === item.id ? 'is-active' : ''}`} data-info-id={item.id}>
+          <div className="popup-content">
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <button onClick={() => setActivePopup(null)}>Закрыть</button>
+          </div>
+        </div>
+      ))}
+    </div>

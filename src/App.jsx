@@ -105,7 +105,7 @@ const App = () => {
                     <div className="coaches__row">
                         <h2 id='coaches'>Профессиональные тренеры</h2>
                         <Trainer />
-                    </div>
+                    </div>                
                 </div>
             </section>
     
