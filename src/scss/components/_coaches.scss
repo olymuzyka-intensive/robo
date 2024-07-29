@@ -19,8 +19,8 @@
   padding: 120px 0 60px;
   position: relative;
   &__item {
-    width: 360px;
     &_img {
+      // width: 360px !important;
       border-radius: 20px;
     }
 
@@ -79,8 +79,9 @@
     left: 50%;
     transform: translate(-50%, -50%);    
     width: 940px;
-    min-height: 730px;
-    height: max-content;
+    // height: 600px;
+    height: 730px;
+    // height: min-content;
     padding: 40px;
     background: #fff;
     z-index: 9999;
@@ -134,7 +135,13 @@
       &-item.active {
         display: flex;
         flex-direction: column;
-        // overflow-y: scroll; // протестировать
+        
+
+      }
+      &-content {
+        max-height: 270px;
+        overflow-y: scroll; // протестировать
+
       }
     }
 
@@ -152,8 +159,8 @@
 }
 
 .coaches__slider {
-  // position: relative;
   margin-top: 60px;
+  // display: flex !important;
 }
 
 .slick-track {
@@ -202,7 +209,7 @@
 }
 
 .slick-prev {
-  left: 92%;
+  left: 90%;
 }
 
 .slick-arrow.slick-prev {
@@ -211,8 +218,8 @@
 
 .slick-arrow.slick-next {
   background: url('/public/img/arrow-right.png') 0 0 / 100% no-repeat;
-  right: 10px;
-}
+  right: 0px;
+} 
 
 .slick-list {
   overflow-y: visible;

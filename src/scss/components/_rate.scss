@@ -1,5 +1,5 @@
 .rate {
-    padding: 60px 0 120px;
+    padding: 120px 0;
     &__row {
         display: flex;
         flex-direction: column;
@@ -8,6 +8,8 @@
         margin-top: 60px;
         display: flex;
         gap: 40px;
+        align-items: baseline;
+        justify-content: space-between;
         &_col {
             width: 360px;
             height: 460px;
@@ -17,7 +19,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             text-align: center;
             color: #141024;
             transition: 2s;
@@ -46,9 +48,9 @@
             color: white;
             // height: 500px;
             transform: scaleY(1.06);
-            &-name {
-                transform: scaleY(0.94);
-            }
+            // &-name {
+            //     transform: scaleY(0.94);
+            // }
         }
     }
 }

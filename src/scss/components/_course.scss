@@ -3,13 +3,17 @@
     background: #F9F9F9;
     &__what {
         display: flex;
-        gap: 35px;
+        // gap: 35px;
+        justify-content: space-between;
         &_title {
             font-weight: 600;
             font-size: 24px;
             line-height: 38px;
             color: #141024;
-            padding: 60px 0 20px;          
+            padding: 60px 0 20px; 
+            &-span {
+                position: relative;
+            }         
         }
         &_text {
             font-weight: 400;

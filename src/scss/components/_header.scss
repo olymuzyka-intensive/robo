@@ -7,6 +7,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo a,
@@ -19,6 +20,9 @@
 
   &__phone {
     font-weight: 600;
+    &_mobile {
+      display: none;
+    }
   }
 
   &__nav {
@@ -39,5 +43,8 @@
         border-bottom-color: white;
       }
     } 
+    &_burger {
+      display: none;
+    }
   }  
 }  

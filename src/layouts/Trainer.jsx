@@ -89,7 +89,7 @@ function Trainer() {
             <div className="coaches__info_top">
               <img src={coache.image} className="coaches__item_img" />
               <div className="coaches__item_center">
-                <div className="coaches__item_name">{coache.name}</div>
+                <div className="coaches__item_name--popup">{coache.name}</div>
                 <div className="coaches__item_info">{coache.info}</div>
                 <div className="coaches__item_socials">
                   <a href={coache.facebook} target="blank">
