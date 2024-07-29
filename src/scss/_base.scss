@@ -32,3 +32,26 @@ h2 {
   font-weight: 600;
   font-size: 50px;
 }
+
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+select.coaches__info_chapter--mobile {
+  background: #d52027 url('/public/img/arrow-down.svg') no-repeat right 100px center;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0;
+  -o-appearance:none; 
+  -webkit-appearance: none; /* Стиль для Safari */
+  -moz-appearance: none;    /* Стиль для Firefox */
+  appearance: none;         /* Стиль для прочих браузеров */
+}
+
+// option .coaches__info_chapter--mobile:hover,
+// option .coaches__info_chapter--mobile:active {
+//   background: #d52027;
+//   color: white;
+// }

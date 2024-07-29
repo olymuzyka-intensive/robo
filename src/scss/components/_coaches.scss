@@ -60,6 +60,11 @@
       }
     }
 
+    &_center {
+      display: flex;
+      flex-direction: column;
+    }
+
     &_socials {
       display: flex;
       gap: 10px;
@@ -79,9 +84,7 @@
     left: 50%;
     transform: translate(-50%, -50%);    
     width: 940px;
-    // height: 600px;
     height: 730px;
-    // height: min-content;
     padding: 40px;
     background: #fff;
     z-index: 9999;
@@ -98,11 +101,25 @@
       height: 100%;
     }
 
+    &_bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
     &_close {
       margin-left: auto;
       cursor: pointer;
       &:hover {
         color: #d52027;
+      }
+      &--mobile {
+        display: none;
+        font-size: 28px;
+        font-weight: 600;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 25px;
       }
     }
 
@@ -123,6 +140,9 @@
           color: #d52027;
         }   
       }
+      &--mobile {
+        display: none;
+      }
 
       &-nav.active {
         color: #d52027;
@@ -134,10 +154,9 @@
 
       &-item.active {
         display: flex;
-        flex-direction: column;
-        
-
+        flex-direction: column;     
       }
+        
       &-content {
         max-height: 270px;
         overflow-y: scroll; // протестировать
@@ -179,8 +198,7 @@
   width: 260px;
   height: 5px;
   content: "";
-  opacity: 0.25;
-  background: rgba(20, 16, 36, 0.8);
+  background: rgba(20, 16, 36, 0.2);
 }
 
 .slick-dots li button:before .slick-active {

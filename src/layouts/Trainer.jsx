@@ -90,7 +90,7 @@ function Trainer() {
               <img src={coache.image} className="coaches__item_img" />
               <div className="coaches__item_center">
                 <div className="coaches__item_name--popup">{coache.name}</div>
-                <div className="coaches__item_info">{coache.info}</div>
+                <div className="coaches__item_info--popup">{coache.info}</div>
                 <div className="coaches__item_socials">
                   <a href={coache.facebook} target="blank">
                     <svg
@@ -146,23 +146,74 @@ function Trainer() {
               >
                 Закрыть
               </div>
+              <div
+                className="coaches__info_close--mobile"
+                onClick={() => setShowModal(null)}
+              >
+                x
+              </div>
             </div>
             <div className="coaches__info_bottom">
+              <select className="coaches__info_chapter--mobile">
+                <option
+                  className={
+                    showChapter === "tab1"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
+                  onClick={toggleTab1}
+                >
+                  Образование
+                </option>
+                <option
+                  className={
+                    showChapter === "tab2"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
+                  onClick={toggleTab2}
+                >
+                  Опыт работы
+                </option>
+                <option
+                  className={
+                    showChapter === "tab3"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
+                  onClick={toggleTab3}
+                >
+                  Награды
+                </option>
+              </select>
+
               <div className="coaches__info_chapter">
                 <div
-                  className={showChapter === 'tab1' ? "coaches__info_chapter-nav active" : "coaches__info_chapter-nav" }
+                  className={
+                    showChapter === "tab1"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
                   onClick={toggleTab1}
                 >
                   Образование
                 </div>
                 <div
-                  className={showChapter === 'tab2' ? "coaches__info_chapter-nav active" : "coaches__info_chapter-nav" }
+                  className={
+                    showChapter === "tab2"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
                   onClick={toggleTab2}
                 >
                   Опыт работы
                 </div>
                 <div
-                  className={showChapter === 'tab3' ? "coaches__info_chapter-nav active" : "coaches__info_chapter-nav" }
+                  className={
+                    showChapter === "tab3"
+                      ? "coaches__info_chapter-nav active"
+                      : "coaches__info_chapter-nav"
+                  }
                   onClick={toggleTab3}
                 >
                   Награды
@@ -170,7 +221,12 @@ function Trainer() {
               </div>
               <div className="coaches__info_chapter-content">
                 <div
-                  className={showChapter === "tab1" ? "coaches__info_chapter-item active" : "coaches__info_chapter-item"}>
+                  className={
+                    showChapter === "tab1"
+                      ? "coaches__info_chapter-item active"
+                      : "coaches__info_chapter-item"
+                  }
+                >
                   {coache.timeEdu} <br />
                   {coache.placeEdu} <br />
                   Факультет: {coache.facultyEdu} <br />
@@ -184,12 +240,24 @@ function Trainer() {
                   {coache.programCourse} <br />
                   Место проведения: {coache.placeCourse} <br />
                 </div>
-                <div className={showChapter === "tab2" ? "coaches__info_chapter-item active" : "coaches__info_chapter-item"}>
+                <div
+                  className={
+                    showChapter === "tab2"
+                      ? "coaches__info_chapter-item active"
+                      : "coaches__info_chapter-item"
+                  }
+                >
                   {coache.experiencePeriod} <br />
                   {coache.experiencePost} <br />
                   Обязанности: {coache.experienceCharge} <br />
                 </div>
-                <div className={showChapter === "tab3" ? "coaches__info_chapter-item active" : "coaches__info_chapter-item"}>
+                <div
+                  className={
+                    showChapter === "tab3"
+                      ? "coaches__info_chapter-item active"
+                      : "coaches__info_chapter-item"
+                  }
+                >
                   {coache.awardsTitle} <br />
                   {coache.awards}
                 </div>

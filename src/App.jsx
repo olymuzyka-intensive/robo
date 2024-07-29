@@ -33,17 +33,9 @@ const App = () => {
               </a>
             </div>
             {/* <button className="header__nav_mobile"> */}
-            <ul className="header__nav_burger">
-                <li className="header__nav_item">
-                  <a href="#about">О школе</a>
-                </li>
-                <li className="header__nav_item">
-                  <a href="#coaches">Тренеры</a>
-                </li>
-                <li className="header__nav_item">
-                  <a href="#rate">Стоимость</a>
-                </li>
-              </ul>
+            <button className="header__nav_burger">
+              <span></span>
+            </button>
 
             {/* </button> */}
           </div>
