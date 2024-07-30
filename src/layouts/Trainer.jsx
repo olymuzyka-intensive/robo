@@ -14,6 +14,10 @@ function Trainer() {
     setShowModal(slideId);
   };
 
+  const toggleTab = (event) => {
+    setShowChapter(event.target.value);
+  };
+
   const toggleTab1 = () => {
     setShowChapter("tab1");
   };
@@ -154,34 +158,31 @@ function Trainer() {
               </div>
             </div>
             <div className="coaches__info_bottom">
-              <select className="coaches__info_chapter--mobile">
-                <option
+              <select className="coaches__info_chapter--mobile" onChange={toggleTab} value={showChapter}>
+                <option value="tab1"
                   className={
                     showChapter === "tab1"
                       ? "coaches__info_chapter-nav active"
                       : "coaches__info_chapter-nav"
                   }
-                  onClick={toggleTab1}
                 >
                   Образование
                 </option>
-                <option
+                <option value="tab2"
                   className={
                     showChapter === "tab2"
                       ? "coaches__info_chapter-nav active"
                       : "coaches__info_chapter-nav"
                   }
-                  onClick={toggleTab2}
                 >
                   Опыт работы
                 </option>
-                <option
+                <option value="tab3"
                   className={
                     showChapter === "tab3"
                       ? "coaches__info_chapter-nav active"
                       : "coaches__info_chapter-nav"
                   }
-                  onClick={toggleTab3}
                 >
                   Награды
                 </option>
@@ -220,7 +221,7 @@ function Trainer() {
                 </div>
               </div>
               <div className="coaches__info_chapter-content">
-                <div
+                { showChapter === 'tab1' && <div
                   className={
                     showChapter === "tab1"
                       ? "coaches__info_chapter-item active"
@@ -239,8 +240,8 @@ function Trainer() {
                   Программа дополнительного образования
                   {coache.programCourse} <br />
                   Место проведения: {coache.placeCourse} <br />
-                </div>
-                <div
+                </div>}
+                { showChapter === 'tab2' && <div
                   className={
                     showChapter === "tab2"
                       ? "coaches__info_chapter-item active"
@@ -250,8 +251,8 @@ function Trainer() {
                   {coache.experiencePeriod} <br />
                   {coache.experiencePost} <br />
                   Обязанности: {coache.experienceCharge} <br />
-                </div>
-                <div
+                </div>}
+                { showChapter === 'tab3' && <div
                   className={
                     showChapter === "tab3"
                       ? "coaches__info_chapter-item active"
@@ -260,7 +261,7 @@ function Trainer() {
                 >
                   {coache.awardsTitle} <br />
                   {coache.awards}
-                </div>
+                </div>}
               </div>
             </div>
           </div>
