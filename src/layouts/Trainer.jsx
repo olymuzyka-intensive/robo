@@ -221,7 +221,7 @@ function Trainer() {
                 </div>
               </div>
               <div className="coaches__info_chapter-content">
-                { showChapter === 'tab1' && <div
+                <div
                   className={
                     showChapter === "tab1"
                       ? "coaches__info_chapter-item active"
@@ -240,8 +240,8 @@ function Trainer() {
                   Программа дополнительного образования
                   {coache.programCourse} <br />
                   Место проведения: {coache.placeCourse} <br />
-                </div>}
-                { showChapter === 'tab2' && <div
+                </div>
+                <div
                   className={
                     showChapter === "tab2"
                       ? "coaches__info_chapter-item active"
@@ -251,8 +251,8 @@ function Trainer() {
                   {coache.experiencePeriod} <br />
                   {coache.experiencePost} <br />
                   Обязанности: {coache.experienceCharge} <br />
-                </div>}
-                { showChapter === 'tab3' && <div
+                </div>
+                <div
                   className={
                     showChapter === "tab3"
                       ? "coaches__info_chapter-item active"
@@ -261,7 +261,7 @@ function Trainer() {
                 >
                   {coache.awardsTitle} <br />
                   {coache.awards}
-                </div>}
+                </div>
               </div>
             </div>
           </div>
