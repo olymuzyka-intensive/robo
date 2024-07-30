@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Trainer from "./layouts/Trainer";
 
+
+
 const App = () => {
+  const [isActive, setIsActive] = useState(false)
+
+  const openMenu = () => {
+    setIsActive(!isActive)
+  }
+
+  const closeMenu = () => {
+    setIsActive(false)
+  }
+
   return (
     <div className="app-container">
       <header className="header" id="header">
@@ -11,16 +23,15 @@ const App = () => {
               <a href="#"> ROBO.SCHOOL</a>
             </div>
             <nav>
-              <ul className="header__nav">
+              <ul className={`header__nav ${isActive ? "open" : ""}`}>
                 <li className="header__nav_item">
-                  {" "}
-                  <a href="#about">О школе</a>
+                  <a href="#about" onClick={closeMenu}>О школе</a>
                 </li>
                 <li className="header__nav_item">
-                  <a href="#coaches">Тренеры</a>
+                  <a href="#coaches" onClick={closeMenu}>Тренеры</a>
                 </li>
                 <li className="header__nav_item">
-                  <a href="#rate">Стоимость</a>
+                  <a href="#rate" onClick={closeMenu}>Стоимость</a>
                 </li>
               </ul>
             </nav>
@@ -32,12 +43,9 @@ const App = () => {
                 <img src="img/phone.svg" alt="phone" />
               </a>
             </div>
-            {/* <button className="header__nav_mobile"> */}
-            <button className="header__nav_burger">
+            <button className={`header__nav_burger ${isActive ? "open" : ""}`} onClick={openMenu}>
               <span></span>
             </button>
-
-            {/* </button> */}
           </div>
         </div>
       </header>
@@ -47,7 +55,7 @@ const App = () => {
           <div className="container">
             <div className="promo__row">
               <div className="promo__row_left">
-                <h1 className="promo__title">ROBO SCHOOL</h1>
+                <h1 className="promo__title" id="promo" >ROBO SCHOOL</h1>
                 <div className="promo__text">
                   Курсы повышения квалификации по робототехнике для педагогов
                   начальной школы
@@ -83,10 +91,10 @@ const App = () => {
           </div>
         </section>
 
-        <section id="about" className="about">
+        <section className="about">
           <div className="container">
             <div className="about__row">
-              <div className="about__description">
+              <div className="about__description" id="about">
                 <span>Robo School – </span>учреждение для формирования кадрового
                 педагогического резерва в сфере робототехники и программирования
               </div>
@@ -220,7 +228,7 @@ const App = () => {
           <div className="container">
             <div className="make__row">
               <div className="make__row_left">
-                <div className="make__row_title">
+                <div className="make__row_title" id="make">
                   Запишитесь на курс со скидкой 10%
                 </div>
                 <div className="make__row_text">
@@ -244,7 +252,6 @@ const App = () => {
         <div className="container">
           <div className="footer__row">
             <div className="footer__logo">
-              {" "}
               <a href="#"> ROBO.SCHOOL</a>
             </div>
             <div className="footer__phone">
