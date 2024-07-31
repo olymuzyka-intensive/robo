@@ -1,20 +1,22 @@
 .promo {
     background: #141024;
     color: white;
-    padding-top: 80px;
+    padding-top: 50px;
     overflow: hidden;
     &__row {
         display: flex;
-        gap: 30px;
+        gap: 25px;
         &_left {
-            padding: 245px 0 240px; //320
+            padding: 180px 0 320px; 
             width: 530px;
+            display: flex;
+            flex-direction: column;
         }
         &_right {
             position: relative;
             &-1 {
                 position: absolute;
-                top: 40px;
+                // top: 40px; 
             }
             &-2 {
                 position: absolute;
@@ -30,7 +32,7 @@
         padding-bottom: 50px;
     }
     &__text {
-        padding-bottom: 75px;
+        margin-bottom: 50px;
         font-size: 20px;
         line-height: 32px; 
     }

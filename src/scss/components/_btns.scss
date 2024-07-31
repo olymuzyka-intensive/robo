@@ -7,7 +7,9 @@
   line-height: 29px;
   cursor: pointer;
   &--sign {
-    padding: 25px 84px;
+    width: 280px;
+    padding: 25px 0;
+    text-align: center;
     color: white;
     font-weight: 700;
     &:hover {
@@ -82,7 +84,7 @@
 
   .up {
     position: fixed;
-    width: 50px;
+    width: 35px;
     // left: 95%;
     right: 1%;
     bottom: 1%;   

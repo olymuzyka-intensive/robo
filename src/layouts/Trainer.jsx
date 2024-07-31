@@ -158,7 +158,7 @@ function Trainer() {
               </div>
             </div>
             <div className="coaches__info_bottom">
-              <select className="coaches__info_chapter--mobile" onChange={toggleTab} value={showChapter}>
+              <select className="coaches__info_chapter--mobile" onChange={toggleTab} value={showChapter} id="mySelect">
                 <option value="tab1"
                   className={
                     showChapter === "tab1"

@@ -20,25 +20,29 @@
   position: relative;
   &__item {
     &_img {
-      // width: 360px !important;
       border-radius: 20px;
     }
 
-    &_name {
+    &_name, &_name--popup {
       font-weight: 600;
       font-size: 24px;
       line-height: 38px;
       color: #141024;
       padding-top: 20px;
     }
+    &_name--popup {
+      padding-top: 0;
+    } 
 
-    &_info {
+    &_info, &_info--popup {
       font-weight: 400;
       font-size: 18px;
       line-height: 29px;
       color: rgba(20, 16, 36, 0.7);
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 20px 0;
+    }
+    &_info--popup {
+      padding: 10px 0;
     }
 
     &_more {
@@ -236,7 +240,7 @@
 
 .slick-arrow.slick-next {
   background: url('/public/img/arrow-right.png') 0 0 / 100% no-repeat;
-  right: 0px;
+  right: 20px;
 } 
 
 .slick-list {
